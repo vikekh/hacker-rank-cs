@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Challenges", "Challenges", "{39659702-937F-467D-93B7-D2B857FDFD75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{ACFEDF6C-3513-4D5C-9272-7F23C822E153}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{6540ADCD-EEC3-40DC-A267-95FDB14BB9B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikekh.HackerRank.Challenges.TwoStrings", "Vikekh.HackerRank.Challenges.TwoStrings\Vikekh.HackerRank.Challenges.TwoStrings.csproj", "{1E20D44A-B568-4A5C-9948-DB4737CA7D94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikekh.HackerRank.Challenges.Tests", "Vikekh.HackerRank.Challenges.Tests\Vikekh.HackerRank.Challenges.Tests.csproj", "{B74F97C2-AE90-41AB-8749-B967A712DA95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E20D44A-B568-4A5C-9948-DB4737CA7D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E20D44A-B568-4A5C-9948-DB4737CA7D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E20D44A-B568-4A5C-9948-DB4737CA7D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E20D44A-B568-4A5C-9948-DB4737CA7D94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B74F97C2-AE90-41AB-8749-B967A712DA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74F97C2-AE90-41AB-8749-B967A712DA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74F97C2-AE90-41AB-8749-B967A712DA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74F97C2-AE90-41AB-8749-B967A712DA95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ACFEDF6C-3513-4D5C-9272-7F23C822E153} = {39659702-937F-467D-93B7-D2B857FDFD75}
+		{6540ADCD-EEC3-40DC-A267-95FDB14BB9B9} = {ACFEDF6C-3513-4D5C-9272-7F23C822E153}
+		{1E20D44A-B568-4A5C-9948-DB4737CA7D94} = {6540ADCD-EEC3-40DC-A267-95FDB14BB9B9}
+		{B74F97C2-AE90-41AB-8749-B967A712DA95} = {39659702-937F-467D-93B7-D2B857FDFD75}
+	EndGlobalSection
+EndGlobal
