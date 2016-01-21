@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{6540ADCD-EEC3-40DC-A267-95FDB14BB9B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikekh.HackerRank.Challenges.TwoStrings", "Vikekh.HackerRank.Challenges.TwoStrings\Vikekh.HackerRank.Challenges.TwoStrings.csproj", "{1E20D44A-B568-4A5C-9948-DB4737CA7D94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikekh.HackerRank.Challenges.TwoStrings", "src\Vikekh.HackerRank.Challenges.TwoStrings\Vikekh.HackerRank.Challenges.TwoStrings.csproj", "{1E20D44A-B568-4A5C-9948-DB4737CA7D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikekh.HackerRank.Challenges.Tests", "Vikekh.HackerRank.Challenges.Tests\Vikekh.HackerRank.Challenges.Tests.csproj", "{B74F97C2-AE90-41AB-8749-B967A712DA95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikekh.HackerRank.Challenges.Tests", "src\Vikekh.HackerRank.Challenges.Tests\Vikekh.HackerRank.Challenges.Tests.csproj", "{B74F97C2-AE90-41AB-8749-B967A712DA95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
