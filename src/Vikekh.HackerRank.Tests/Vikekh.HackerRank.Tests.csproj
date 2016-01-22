@@ -45,15 +45,22 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
     <Compile Include="TwoStringsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EncryptionTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Vikekh.HackerRank.Challenges.Encryption\Vikekh.HackerRank.Challenges.Encryption.csproj">
+      <Project>{7e72aa78-fabc-42f1-a14e-83c0f745974a}</Project>
+      <Name>Vikekh.HackerRank.Challenges.Encryption</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Vikekh.HackerRank.Challenges.TwoStrings\Vikekh.HackerRank.Challenges.TwoStrings.csproj">
       <Project>{1e20d44a-b568-4a5c-9948-db4737ca7d94}</Project>
       <Name>Vikekh.HackerRank.Challenges.TwoStrings</Name>
