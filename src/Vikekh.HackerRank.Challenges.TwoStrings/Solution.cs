@@ -2,6 +2,9 @@
 
 namespace Vikekh.HackerRank.Challenges.TwoStrings
 {
+    /// <summary>
+    /// https://www.hackerrank.com/challenges/two-strings
+    /// </summary>
     public class Solution
     {
         public static void Main(string[] args)
