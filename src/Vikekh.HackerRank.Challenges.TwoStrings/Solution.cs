@@ -4,10 +4,9 @@ namespace Vikekh.HackerRank.Challenges.TwoStrings
 {
     public class Solution
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            int t;
-            int.TryParse(Console.ReadLine(), out t);
+            var t = int.Parse(Console.ReadLine());
 
             for (var i = 0; i < t; i++)
             {
@@ -18,31 +17,45 @@ namespace Vikekh.HackerRank.Challenges.TwoStrings
             }
         }
 
-        internal static int GetIndex(char c)
+        public static bool HasCommonSubstring(string a, string b)
         {
-            return (c - 'a');
-        }
+            SortByLength(ref a, ref b);
 
-        internal static bool HasCommonSubstring(string a, string b)
-        {
-            var shortString = a.Length <= b.Length ? a : b;
-            var longString = shortString == b ? a : b;
-            var substrings = new bool[26];
+            var array = new bool[26];
 
-            for (var i = 0; i < shortString.Length; i++)
+            for (var i = 0; i < a.Length; i++)
             {
-                substrings[GetIndex(shortString[i])] = true;
+                array[a[i].GetLetterIndex()] = true;
             }
 
-            for (var i = 0; i < longString.Length; i++)
+            for (var i = 0; i < b.Length; i++)
             {
-                if (substrings[GetIndex(longString[i])])
+                if (array[b[i].GetLetterIndex()])
                 {
                     return true;
                 }
             }
 
             return false;
+        }
+
+        public static void SortByLength(ref string a, ref string b)
+        {
+            if (a.Length > b.Length)
+            {
+                var swap = a;
+
+                a = b;
+                b = swap;
+            }
+        }
+    }
+
+    public static class Extensions
+    {
+        public static int GetLetterIndex(this char self)
+        {
+            return (self - 'a');
         }
     }
 }
