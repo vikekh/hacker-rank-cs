@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Vikekh.HackerRank.Challenges.Encryption;
 
-namespace Vikekh.HackerRank.Challenges.Tests
+namespace Vikekh.HackerRank.Challenges.Encryption.Test
 {
     [TestClass]
     public class EncryptionTests

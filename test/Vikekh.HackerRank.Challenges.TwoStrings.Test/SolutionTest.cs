@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Vikekh.HackerRank.Challenges.TwoStrings;
 
-namespace Vikekh.HackerRank.Challenges.Tests
+namespace Vikekh.HackerRank.Challenges.TwoStrings.Test
 {
     [TestClass]
     public class TwoStringsTests
