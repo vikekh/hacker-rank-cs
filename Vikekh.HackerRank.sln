@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stacks", "Stacks", "{2BCC82
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikekh.HackerRank.Challenges.SimpleTextEditor", "src\Vikekh.HackerRank.Challenges.SimpleTextEditor\Vikekh.HackerRank.Challenges.SimpleTextEditor.csproj", "{CD9F7E50-61D5-44A4-A4A8-BF6CF471105E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vikekh.HackerRank.Challenges.SimpleTextEditor.Test", "test\Vikekh.HackerRank.Challenges.SimpleTextEditor.Test\Vikekh.HackerRank.Challenges.SimpleTextEditor.Test.csproj", "{66AEDC2A-B522-42A1-8AE8-52B971F046D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{CD9F7E50-61D5-44A4-A4A8-BF6CF471105E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD9F7E50-61D5-44A4-A4A8-BF6CF471105E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD9F7E50-61D5-44A4-A4A8-BF6CF471105E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AEDC2A-B522-42A1-8AE8-52B971F046D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AEDC2A-B522-42A1-8AE8-52B971F046D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AEDC2A-B522-42A1-8AE8-52B971F046D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AEDC2A-B522-42A1-8AE8-52B971F046D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,5 +83,6 @@ Global
 		{3B0BEA86-5F03-4509-B49F-07992F187CD0} = {39659702-937F-467D-93B7-D2B857FDFD75}
 		{2BCC8222-3625-46CA-BE05-7DCCA86CE6AD} = {3B0BEA86-5F03-4509-B49F-07992F187CD0}
 		{CD9F7E50-61D5-44A4-A4A8-BF6CF471105E} = {2BCC8222-3625-46CA-BE05-7DCCA86CE6AD}
+		{66AEDC2A-B522-42A1-8AE8-52B971F046D6} = {77E016F3-2F05-430E-B5F3-00C697B6ABEF}
 	EndGlobalSection
 EndGlobal
