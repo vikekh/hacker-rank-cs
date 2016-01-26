@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Vikekh.HackerRank.Challenges.SimpleTextEditor
 {
@@ -9,7 +11,7 @@ namespace Vikekh.HackerRank.Challenges.SimpleTextEditor
     {
         public static void Main(string[] args)
         {
-            var editor = new SimpleTextEditor();
+            var editor = new Editor();
             var q = int.Parse(Console.ReadLine());
 
             for (var i = 0; i < q; i++)
@@ -23,7 +25,7 @@ namespace Vikekh.HackerRank.Challenges.SimpleTextEditor
                     arg = line.Substring(2);
                 }
 
-                var print = editor.Apply(t, arg);
+                var print = editor.Operation(t, arg);
 
                 if (print != null)
                 {
@@ -33,16 +35,56 @@ namespace Vikekh.HackerRank.Challenges.SimpleTextEditor
         }
     }
 
-    public class SimpleTextEditor
+    public class Editor
     {
-        public string Apply(int t, string arg)
+        public IList<string> Stack { get; set; }
+
+        public Editor(string init = "")
         {
-            if (t == 3)
+            Stack = new List<string>();
+            Stack.Add(init);
+        }
+
+        public string Operation(int t, string arg)
+        {
+            if (t == 1)
             {
-                return ".";
+                Append(arg);
+            }
+            else if (t == 2)
+            {
+                Erase(int.Parse(arg));
+            }
+            else if (t == 3)
+            {
+                return Get(int.Parse(arg));
+            }
+            else if (t == 4)
+            {
+                Undo();
             }
 
             return null;
+        }
+
+        public void Append(string w)
+        {
+            Stack.Add(Stack.Last() + w);
+        }
+
+        public void Erase(int k)
+        {
+            Stack.Add(Stack.Last().Substring(0, Stack.Last().Length - k));
+        }
+
+        public string Get(int k)
+        {
+            return Stack.Last()[k - 1].ToString();
+        }
+
+        public void Undo()
+        {
+            Stack.RemoveAt(Stack.Count() - 1);
         }
     }
 }
