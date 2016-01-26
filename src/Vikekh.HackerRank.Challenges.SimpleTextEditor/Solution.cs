@@ -45,7 +45,7 @@ namespace Vikekh.HackerRank.Challenges.SimpleTextEditor
             Stack.Add(init);
         }
 
-        public string Operation(int t, string arg)
+        public string Operation(int t, string arg = null)
         {
             if (t == 1)
             {

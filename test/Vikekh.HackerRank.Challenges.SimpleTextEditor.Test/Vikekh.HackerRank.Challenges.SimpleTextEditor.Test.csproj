@@ -50,8 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="SolutionTest.cs" />
+    <Compile Include="EditorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Vikekh.HackerRank.Challenges.SimpleTextEditor\Vikekh.HackerRank.Challenges.SimpleTextEditor.csproj">
+      <Project>{cd9f7e50-61d5-44a4-a4a8-bf6cf471105e}</Project>
+      <Name>Vikekh.HackerRank.Challenges.SimpleTextEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
